@@ -1,39 +1,53 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+import ProductTable from "./components/ProductTable";
 import "./App.css";
 
 function App() {
     const [productList, setProductList] = useState([
         {
             id: 1,
-            name: "Produto 1",
-            category: "Categoria A",
-            price: 10.99,
+            nome: "Produto 1",
+            categoria: "Categoria A",
+            descricao: "Descrição do produto",
+            dataValidade: "22/10/2023",
+            precoUnitario: 10.99,
+            quantidade: 1,
         },
         {
             id: 2,
-            name: "Produto 2",
-            category: "Categoria B",
-            price: 15.99,
+            nome: "Produto 2",
+            categoria: "Categoria B",
+            descricao: "Descrição do produto",
+            dataValidade: "22/10/2023",
+            precoUnitario: 15.99,
+            quantidade: 1,
         },
         {
             id: 3,
-            name: "Produto 3",
-            category: "Categoria A",
-            price: 7.99,
+            nome: "Produto 3",
+            categoria: "Categoria A",
+            descricao: "Descrição do produto",
+            dataValidade: "22/10/2023",
+            precoUnitario: 7.99,
+            quantidade: 1,
         },
         {
             id: 4,
-            name: "Produto 4",
-            category: "Categoria C",
-            price: 20.99,
+            nome: "Produto 4",
+            categoria: "Categoria C",
+            descricao: "Descrição do produto",
+            dataValidade: "22/10/2023",
+            precoUnitario: 20.99,
+            quantidade: 1,
         },
         {
             id: 5,
-            name: "Produto 5",
-            category: "Categoria B",
-            price: 12.99,
+            nome: "Produto 5",
+            categoria: "Categoria B",
+            descricao: "Descrição do produto",
+            dataValidade: "22/10/2023",
+            precoUnitario: 12.99,
+            quantidade: 1,
         },
     ]);
 
@@ -41,24 +55,7 @@ function App() {
         <>
             <div className="App">
                 <h1>Listify</h1>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Nome do Produto</th>
-                            <th>Categoria</th>
-                            <th>Preço</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {productList.map((product) => (
-                            <tr key={product.id}>
-                                <td>{product.name}</td>
-                                <td>{product.category}</td>
-                                <td>R$ {product.price.toFixed(2)}</td>
-                            </tr>
-                        ))}
-                    </tbody>
-                </table>
+                <ProductTable productList={productList} />
             </div>
         </>
     );
