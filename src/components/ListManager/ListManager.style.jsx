@@ -78,3 +78,64 @@ export const InputSearchContainer = styled.div`
     }
   }
 `;
+
+export const ListContainer = styled.div`
+  padding-right: 80px;
+  padding-left: 80px;
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+
+  header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+    cursor: pointer;
+
+    .sort-button {
+      background: transparent;
+      border: none;
+    }
+
+    span {
+      margin-right: 8px;
+      font-weight: bold;
+      font-size: 14px;
+    }
+  }
+`;
+
+export const List = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  border-top: 1px solid #d9bebe;
+  cursor: pointer;
+
+  .actions {
+    display: flex;
+    align-items: center;
+
+    button {
+      outline: none;
+      border: none;
+      background: transparent;
+    }
+
+    img {
+      padding-right: 20px;
+    }
+  }
+
+  .category {
+    small {
+      background: #d9bebe;
+      border-radius: 4px;
+      text-transform: uppercase;
+      font-weight: bold;
+      padding: 4px;
+      margin-left: 8px;
+    }
+  }
+`;

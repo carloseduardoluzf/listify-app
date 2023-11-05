@@ -1,6 +1,4 @@
-import { useState } from "react";
 import { ThemeProvider } from "styled-components";
-import ProductTable from "../ProductTable";
 import GlobalStyles from "../../assets/styles/global";
 import defaultTheme from "../../assets/styles/themes/default";
 import { Container } from "../App/App.style.jsx";
