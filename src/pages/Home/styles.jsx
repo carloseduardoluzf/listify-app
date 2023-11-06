@@ -55,7 +55,7 @@ export const InputSearchContainer = styled.div`
     border-radius: 20px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     border: none;
-    background-color: #d9bebe;
+    background-color: #6ed5b4;
     padding: 0 16px;
     color: #000000;
     font-weight: 600;
@@ -85,6 +85,11 @@ export const ListContainer = styled.div`
   margin-top: 70px;
   display: flex;
   flex-direction: column;
+
+  a{
+    text-decoration: none;
+    text-decoration-color: black;
+  }
 
   header {
     display: flex;
@@ -130,7 +135,7 @@ export const List = styled.div`
 
   .category {
     small {
-      background: #d9bebe;
+      background: #6ed5b4;
       border-radius: 4px;
       text-transform: uppercase;
       font-weight: bold;
@@ -138,4 +143,15 @@ export const List = styled.div`
       margin-left: 8px;
     }
   }
+
+  .timestamp{
+    display: flex;
+    align-items: center;
+
+    img{
+      margin-right: 10px;
+    }
+
+  }
+
 `;
