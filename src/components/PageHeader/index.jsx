@@ -2,12 +2,13 @@ import { Link } from 'react-router-dom';
 import arrow from '../../assets/icons/arrow-icon.svg';
 import PropTypes from 'prop-types';
 import { Container } from './styles';
+import styled from 'styled-components';
 
 
-export default function PageHeader({title}){
+export default function PageHeader({title, style, link}){
     return (
-        <Container>
-           <Link to="/">
+        <Container style={style}>
+           <Link to={link}>
             <img src={arrow} alt="Voltar para home" />
             <span>Voltar</span>
            </Link>
@@ -18,5 +19,7 @@ export default function PageHeader({title}){
 }
 
 PageHeader.propTypes = {
-    title: PropTypes.string.isRequired
+    title: PropTypes.string.isRequired,
+    style: PropTypes.object,
+    link: PropTypes.string
 }

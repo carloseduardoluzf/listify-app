@@ -155,5 +155,10 @@ export const Item = styled.ul`
 
 export const AddItem = styled.div`
   display: flex;
-  align-items: center;
-  justify-content: space-between;`;
+  justify-content: flex-end;
+
+  img{
+     cursor: pointer;
+  }
+ 
+  `;

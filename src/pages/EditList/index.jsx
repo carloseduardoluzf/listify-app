@@ -5,7 +5,7 @@ import { Container } from "./styles";
 export default function EditList() {
   return (
     <Container>
-      <PageHeader title="Editar lista" />
+      <PageHeader title="Editar lista" link={'/'}/>
       <ListForm ButtonLabel="Salvar alterações" />
     </Container>
   );

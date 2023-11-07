@@ -10,8 +10,8 @@ import { Container, ItemContainer, Item, ItemHeader, AddItem } from "./styles";
 export default function ListItems() {
   const history = useHistory();
 
-  const toList = () => {
-    history.push("/list/1");
+  const toAddItem = () => {
+    history.push("/addItem");
   };
 
   const [productList, setProductList] = useState([
@@ -50,8 +50,8 @@ export default function ListItems() {
   return (
     <Container>
       <ItemContainer>
-        <PageHeader />
-        <AddItem><img src={addIcon} alt="" /></AddItem>
+        <PageHeader link={'/'} />
+        <AddItem onClick={toAddItem}><img src={addIcon} alt="" /></AddItem>
         <ItemHeader>
         <li>
             <span>Nome do produto</span>
