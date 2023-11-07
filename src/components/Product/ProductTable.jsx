@@ -1,8 +1,41 @@
 import React from "react";
-import { TableSubtitles } from "./ProductTable.style";
 import { Table } from "./ProductTable.style";
 
-const ProductTable = ({ productList }) => {
+export default function ProductTable(){
+
+    const [productList, setProductList] = useState([
+        {
+            id: 1,
+            name: "Produto 1",
+            category: "Categoria A",
+            price: 10.99,
+        },
+        {
+            id: 2,
+            name: "Produto 2",
+            category: "Categoria B",
+            price: 15.99,
+        },
+        {
+            id: 3,
+            name: "Produto 3",
+            category: "Categoria A",
+            price: 7.99,
+        },
+        {
+            id: 4,
+            name: "Produto 4",
+            category: "Categoria C",
+            price: 20.99,
+        },
+        {
+            id: 5,
+            name: "Produto 5",
+            category: "Categoria B",
+            price: 12.99,
+        },
+    ]);
+
     return (
         <Table>
             <thead>
@@ -13,7 +46,6 @@ const ProductTable = ({ productList }) => {
                     <TableSubtitles>Data de Validade</TableSubtitles>
                     <TableSubtitles>Preço</TableSubtitles>
                     <TableSubtitles>Quantidade</TableSubtitles>
-                    <TableSubtitles>Adicionar Produto</TableSubtitles>
                 </tr>
             </thead>
             <tbody>
@@ -25,7 +57,6 @@ const ProductTable = ({ productList }) => {
                         <td>{product.dataValidade}</td>
                         <td>R$ {product.precoUnitario.toFixed(2)}</td>
                         <td>{product.quantidade}</td>
-                        <td>Duds</td>
                     </tr>
                 ))}
             </tbody>
@@ -33,4 +64,3 @@ const ProductTable = ({ productList }) => {
     );
 };
 
-export default ProductTable;

@@ -1,16 +1,14 @@
 import styled from "styled-components";
 
-export const TableSubtitles = styled.th`
-    color: red;
-`;
+
 
 export const Table = styled.table`
     width: 100%;
     border-collapse: collapse;
     margin: 20px auto;
     font-family: Arial, sans-serif;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
 
     th,
     td {
@@ -19,12 +17,12 @@ export const Table = styled.table`
     }
 
     th {
-        background-color: #109010;
+        background-color: #6ed5b4;
         color: white;
     }
 
     tr {
-        border-top: 0.3px solid #808080;
+        border-top: 0.3px solid #ffffff;
     }
 
     tr:hover {
